@@ -2,7 +2,7 @@ import os
 
 if os.path.exists('/content/MellowPyre'):
     os.chdir('/content/MellowPyre')
-    commandline_args = "--share --no-half-vae --listen --xformers --enable-insecure-extension-access --gradio-queue --remotemoe"
+    commandline_args = "--share --listen --xformers --enable-insecure-extension-access --gradio-queue --remotemoe"
     os.system(f"COMMANDLINE_ARGS='{commandline_args}' python launch.py")
     
     if os.path.exists('/content/drive'):
